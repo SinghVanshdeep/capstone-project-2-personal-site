@@ -1,0 +1,168 @@
+/* Styling for the main card page */
+
+.gradient-background {
+    background: linear-gradient(300deg, #F6C391, #E08E6D, #5C469C);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  .flex-container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .main-card{
+    background-color: #FFD3A3;
+    width: 900px;
+  }
+
+  .name-title{
+    margin-top: 0.6rem;
+  }
+
+  .my-pic{
+    width: 200px;
+    border-radius: 50px;
+    border: 2px solid black;
+    margin-top: 1.25rem;
+  }
+
+  .socials{
+    height: 40px;
+    margin-top: 0.6rem;
+  }
+
+  .card-end-links{
+    color: black;
+    text-decoration: none;
+  }
+
+  .card-end-links:hover{
+    color: #E08E6D;
+  }
+
+  .card-end-icons{
+    height: 1.60rem;
+  }
+
+  /* Styling for the CV page */
+
+  .grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 4fr;
+  }
+
+  .sidebar-card{
+    width: auto;
+  }
+
+  .content-card{
+    width: auto;
+  }
+
+  #side-card{
+    /* background-color: #5C469C; */
+    height: 100%;
+  }
+
+  .nav-items{
+    height: 100%;
+  }
+
+  @media (min-width: 1009px){
+    .nav-icons{
+      height: 2rem;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 1009px){
+    .nav-title{
+      font-size: 1.6rem;
+    }
+    .nav-icons{
+      height: 1rem;
+      margin-bottom: 3px;
+    }
+  }
+
+  #main-card{
+    background-color: #E08E6D;
+  }
+
+  #inactive-link{
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .grid-container2{
+    display: grid;
+    height: 100%; /*100% height of the parent*/
+    grid-template-rows: 1fr 4fr;
+  }
+
+  .title-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  .section-title{
+    font-size: 9rem;
+    border-bottom: 1.1rem dotted #5C469C;
+  }
+
+  .content-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .cv-text{
+    width: 90%;
+    text-align: center;
+  }
+
+  #education-text{
+    flex-direction: column;
+    color: white;
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+
+  /* MSc project page */
+  
+  .msc-project{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-pic{
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+  }
